@@ -35,7 +35,7 @@ h2 {
 
 .btn-group {
   margin-top: 50px;
-  position: relative;
+  position: absolute;
   height: 40px;
 }
 
