@@ -13,14 +13,31 @@ body {
   /* margin: auto; */
 }
 
+.new {
+  color: #ff69b4; /* Рожевий колір тексту */
+  font-size: 24px; /* Збільшений розмір шрифту */
+  font-weight: bold; /* Жирний шрифт */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Тінь для тексту */
+  margin-bottom: 20px; /* Відступ знизу */
+  padding: 10px; /* Внутрішні відступи */
+  border-radius: 10px; /* Закруглені краї */
+  background-color: rgba(255, 255, 255, 0.8); /* Напівпрозорий білий фон */
+  transition: all 0.3s ease; /* Анімація при зміні */
+}
+
 .wrapper {
   position: relative;
+  /* overflow: hidden; */
+  max-height: 800px;
   width: 100%;
   max-width: 300px;
   text-align: center;
+  height: 100%;
+  padding: 15px;
   /* margin: auto; */
 
 }
+
 
 h2 {
   font-size: 2em;
@@ -55,9 +72,18 @@ button.yes-btn {
   background: #e94d58;
 }
 
+.answer {
+  margin-bottom: 50px;
+  color: black; /* Колір тексту */
+  font-size: 16px; /* Розмір шрифту */
+  margin-bottom: 10px; /* Відступ знизу */
+}
+
 button.no-btn {
-  position: absolute;
-  left: 50%;
+  position: relative;
+  z-index: 999;
+  left: 27%;
+  margin: 30px;
   transform: translateX(-50%);
 
   text-decoration: none;
