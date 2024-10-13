@@ -62,9 +62,9 @@ const moveButton = () => {
     noBtn.style.top = randomY + "px";
 };
 
-noBtn.addEventListener("mouseover", moveButton);
+noBtn.addEventListener("mouseenter", moveButton);
 noBtn.addEventListener("touchstart", moveButton);
-document.addEventListener("mousemove", (e) => {
+document.addEventListener("mouseenter", (e) => {
     const noBtnRect = noBtn.getBoundingClientRect();
     if (e.clientX < noBtnRect.left || e.clientX > noBtnRect.right || e.clientY < noBtnRect.top || e.clientY > noBtnRect.bottom) {
         moveButton();
